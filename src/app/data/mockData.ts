@@ -49,39 +49,39 @@ export const announcements = [
 export const galleryImages = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1760510088582-3ca0631ad84f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBidWlsZGluZyUyMGVkdWNhdGlvbiUyMGV4dGVyaW9yfGVufDF8fHx8MTc3MzA0MzE2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    url: "https://tse4.mm.bing.net/th/id/OIP.E5W-3P5c6Mq-wmkx3Y-hDgHaDS?pid=Api&h=220&P=0",
     title: "Gedung Sekolah",
     category: "Fasilitas",
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1742549586702-c23994895082?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMHN0dWR5aW5nJTIwY2xhc3Nyb29tJTIwSW5kb25lc2lhfGVufDF8fHx8MTc3MzA0MzE2MXww&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Kegiatan Belajar",
-    category: "Akademik",
-  },
-  {
-    id: 3,
-    url: "https://images.unsplash.com/photo-1700914299961-d8f91559d85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBhY3Rpdml0eSUyMHN0dWRlbnRzJTIwc3BvcnRzJTIwZXZlbnR8ZW58MXx8fHwxNzczMDQzMTYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Kegiatan Olahraga",
-    category: "Ekstrakurikuler",
-  },
-  {
-    id: 4,
-    url: "https://images.unsplash.com/photo-1602114324193-e1c1b41dcde5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBsaWJyYXJ5JTIwYm9va3MlMjBzdHVkZW50cyUyMHJlYWRpbmd8ZW58MXx8fHwxNzczMDM3MTAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Perpustakaan",
-    category: "Fasilitas",
-  },
-  {
-    id: 5,
-    url: "https://images.unsplash.com/photo-1664382953518-4a664ab8a8c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFjaGVyJTIwdGVhY2hpbmclMjB3aGl0ZWJvYXJkJTIwY2xhc3Nyb29tfGVufDF8fHx8MTc3MzA0MzE2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+    url: "https://tse2.mm.bing.net/th/id/OIP.EBEnww470bFB0fg3fc5LwwHaD9?pid=Api&h=220&P=0",
     title: "Kegiatan Mengajar",
     category: "Akademik",
   },
   {
+    id: 3,
+    url: "https://tse3.mm.bing.net/th/id/OIP.8U-8fcu82KfauhQHtV5OFQHaEK?pid=Api&h=220&P=0",
+    title: "Kegiatan P5",
+    category: "Ekstrakurikuler",
+  },
+  {
+    id: 4,
+    url: "https://tse3.mm.bing.net/th/id/OIP.8EFWntmrW3ksHH7HaK74JAHaDS?pid=Api&h=220&P=0",
+    title: "Kegiatan Upacara",
+    category: "Kegiatan",
+  },
+  {
+    id: 5,
+    url: "https://tse4.mm.bing.net/th/id/OIP.M_wnoqddYdXERjXMoAdswgAAAA?pid=Api&h=220&P=0",
+    title: "Acara Sekolah",
+    category: "Kegiatan",
+  },
+  {
     id: 6,
-    url: "https://images.unsplash.com/photo-1742549586702-c23994895082?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMHN0dWR5aW5nJTIwY2xhc3Nyb29tJTIwSW5kb25lc2lhfGVufDF8fHx8MTc3MzA0MzE2MXww&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Diskusi Kelompok",
-    category: "Akademik",
+    url: "https://tse4.mm.bing.net/th/id/OIP.-ISDeOohLDQ1vDhJU2WWegHaD9?pid=Api&h=220&P=0",
+    title: "Kegiatan Keagamaan",
+    category: "Kegiatan",
   },
 ];
 
@@ -95,12 +95,42 @@ export const mockGuru = [
 ];
 
 export const mockSiswa = [
+  // Kelas VII A
   { id: 1, nis: "2024001", nama: "Aulia Rahma Putri", kelas: "VII A", jenisKelamin: "P", ttl: "Bantul, 12 Januari 2012", alamat: "Pleret, Bantul", wali: "Budi Santoso", password: "siswa123", status: "Aktif" },
   { id: 2, nis: "2024002", nama: "Bima Saputra", kelas: "VII A", jenisKelamin: "L", ttl: "Yogyakarta, 5 Maret 2012", alamat: "Imogiri, Bantul", wali: "Hendra Wijaya", password: "siswa456", status: "Aktif" },
   { id: 3, nis: "2024003", nama: "Citra Dewi Lestari", kelas: "VII B", jenisKelamin: "P", ttl: "Bantul, 20 Juni 2012", alamat: "Pleret, Bantul", wali: "Sukarno", password: "siswa789", status: "Aktif" },
-  { id: 4, nis: "2024004", nama: "Dimas Ari Wibowo", kelas: "VIII A", jenisKelamin: "L", ttl: "Bantul, 8 September 2011", alamat: "Piyungan, Bantul", wali: "Agus Prasetyo", password: "siswa321", status: "Aktif" },
-  { id: 5, nis: "2024005", nama: "Eka Putri Sari", kelas: "VIII B", jenisKelamin: "P", ttl: "Bantul, 15 November 2011", alamat: "Kasihan, Bantul", wali: "Slamet Riyadi", password: "siswa654", status: "Aktif" },
-  { id: 6, nis: "2024006", nama: "Fajar Nugroho", kelas: "IX A", jenisKelamin: "L", ttl: "Yogyakarta, 3 April 2010", alamat: "Sewon, Bantul", wali: "Wahyudi", password: "siswa987", status: "Aktif" },
+  
+  // Kelas VII B
+  { id: 4, nis: "2024004", nama: "Doni Hermawan", kelas: "VII B", jenisKelamin: "L", ttl: "Yogyakarta, 14 April 2012", alamat: "Kasihan, Bantul", wali: "Setiyono", password: "siswa012", status: "Aktif" },
+  { id: 5, nis: "2024005", nama: "Eka Sari Wijaya", kelas: "VII B", jenisKelamin: "P", ttl: "Bantul, 8 Mei 2012", alamat: "Piyungan, Bantul", wali: "Tri Winarno", password: "siswa345", status: "Aktif" },
+  
+  // Kelas VII C
+  { id: 6, nis: "2024006", nama: "Faridah Nur Azizah", kelas: "VII C", jenisKelamin: "P", ttl: "Yogyakarta, 25 Juli 2012", alamat: "Sewon, Bantul", wali: "Wahyudi", password: "siswa678", status: "Aktif" },
+  { id: 7, nis: "2024007", nama: "Guntur Pratama", kelas: "VII C", jenisKelamin: "L", ttl: "Bantul, 11 September 2012", alamat: "Imogiri, Bantul", wali: "Hariyadi", password: "siswa901", status: "Aktif" },
+  
+  // Kelas VIII A
+  { id: 8, nis: "2024008", nama: "Hana Kartika", kelas: "VIII A", jenisKelamin: "P", ttl: "Yogyakarta, 3 Februari 2011", alamat: "Pleret, Bantul", wali: "Bambang Sutrisno", password: "siswa234", status: "Aktif" },
+  { id: 9, nis: "2024009", nama: "Ibnu Mahmud", kelas: "VIII A", jenisKelamin: "L", ttl: "Bantul, 17 Oktober 2011", alamat: "Kasihan, Bantul", wali: "Kusuma Wijaya", password: "siswa567", status: "Aktif" },
+  
+  // Kelas VIII B
+  { id: 10, nis: "2024010", nama: "Jaka Mulyono", kelas: "VIII B", jenisKelamin: "L", ttl: "Yogyakarta, 22 November 2011", alamat: "Piyungan, Bantul", wali: "Slamet Riyadi", password: "siswa890", status: "Aktif" },
+  { id: 11, nis: "2024011", nama: "Kartika Suwardi", kelas: "VIII B", jenisKelamin: "P", ttl: "Bantul, 9 Januari 2011", alamat: "Sewon, Bantul", wali: "Wulandari", password: "siswa123", status: "Aktif" },
+  
+  // Kelas VIII C
+  { id: 12, nis: "2024012", nama: "Lina Marlina", kelas: "VIII C", jenisKelamin: "P", ttl: "Yogyakarta, 30 Agustus 2011", alamat: "Imogiri, Bantul", wali: "Sarno Setiawan", password: "siswa456", status: "Aktif" },
+  { id: 13, nis: "2024013", nama: "Malik Surabaya", kelas: "VIII C", jenisKelamin: "L", ttl: "Bantul, 6 Desember 2011", alamat: "Pleret, Bantul", wali: "Prasetyo Dwi", password: "siswa789", status: "Aktif" },
+  
+  // Kelas IX A
+  { id: 14, nis: "2024014", nama: "Nabila Putri", kelas: "IX A", jenisKelamin: "P", ttl: "Yogyakarta, 19 Mei 2010", alamat: "Kasihan, Bantul", wali: "Ahmad Sodikin", password: "siswa012", status: "Aktif" },
+  { id: 15, nis: "2024015", nama: "Oman Kusuma", kelas: "IX A", jenisKelamin: "L", ttl: "Bantul, 27 Juni 2010", alamat: "Piyungan, Bantul", wali: "Bambang Sutrisna", password: "siswa345", status: "Aktif" },
+  
+  // Kelas IX B
+  { id: 16, nis: "2024016", nama: "Purnama Sari", kelas: "IX B", jenisKelamin: "P", ttl: "Yogyakarta, 12 April 2010", alamat: "Sewon, Bantul", wali: "Edi Hermawan", password: "siswa678", status: "Aktif" },
+  { id: 17, nis: "2024017", nama: "Qomar Hidayat", kelas: "IX B", jenisKelamin: "L", ttl: "Bantul, 8 Maret 2010", alamat: "Imogiri, Bantul", wali: "Murtono Basuki", password: "siswa901", status: "Aktif" },
+  
+  // Kelas IX C
+  { id: 18, nis: "2024018", nama: "Rina Wulandari", kelas: "IX C", jenisKelamin: "P", ttl: "Yogyakarta, 31 Januari 2010", alamat: "Pleret, Bantul", wali: "Sukaryo Wiyono", password: "siswa234", status: "Aktif" },
+  { id: 19, nis: "2024019", nama: "Slamet Riyanto", kelas: "IX C", jenisKelamin: "L", ttl: "Bantul, 14 Juli 2010", alamat: "Kasihan, Bantul", wali: "Sutrisno Mudjiyo", password: "siswa567", status: "Aktif" },
 ];
 
 export const mockAbsensi = [
