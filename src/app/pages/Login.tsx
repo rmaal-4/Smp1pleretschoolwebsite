@@ -201,6 +201,14 @@ export default function Login() {
         </button>
       )}
 
+      {/* Home Button */}
+      <button
+        onClick={() => navigate("/")}
+        className="absolute top-4 right-4 flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm hover:bg-white/10 px-3 py-2 rounded-lg"
+      >
+        Ke Beranda
+      </button>
+
       {/* Logo */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
