@@ -10,6 +10,8 @@ import { mockGuru, mockSiswa, mockAbsensi } from "../../data/mockData";
 
 const navItems = [
   { key: "dashboard", label: "Dashboard", icon: LayoutDashboard },
+  { key: "kehadiran_guru", label: "Kehadiran Guru", icon: CheckCircle },
+  { key: "kehadiran_siswa", label: "Kehadiran Siswa", icon: CheckCircle },
   { key: "guru", label: "Data Guru", icon: GraduationCap },
   { key: "siswa", label: "Data Siswa", icon: Users },
   { key: "password", label: "Kata Sandi", icon: Key },
@@ -60,9 +62,11 @@ export default function AdminDashboard() {
       {/* Sidebar */}
       <aside className={`fixed inset-y-0 left-0 z-50 w-64 bg-[#0d3b7d] text-white transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:relative md:translate-x-0 flex flex-col`}>
         <div className="p-4 border-b border-white/10 flex items-center gap-3">
-          <div className="w-9 h-9 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="text-[#0d3b7d] font-black text-xs">SMP1</span>
-          </div>
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.gRycrEfwP4aElgAb_9LTCwHaHa?pid=Api&h=220&P=0"
+            alt="Logo SMP N 1 Pleret"
+            className="w-9 h-9 rounded-full object-cover flex-shrink-0"
+          />
           <div className="min-w-0">
             <p className="font-bold text-sm truncate">SMP N 1 Pleret</p>
             <p className="text-yellow-300 text-xs">Portal Admin</p>
@@ -443,6 +447,105 @@ export default function AdminDashboard() {
                               </button>
                             </div>
                           </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* KEHADIRAN GURU */}
+          {activeTab === "kehadiran_guru" && (
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h2 className="text-xl font-bold text-gray-800">Kehadiran Guru</h2>
+                  <p className="text-gray-500 text-sm">Data kehadiran guru harian</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead className="bg-gray-50 border-b border-gray-200">
+                      <tr>
+                        {["No", "Nama Guru", "Mata Pelajaran", "Status", "Keterangan", "Tanggal"].map(h => (
+                          <th key={h} className="text-left px-4 py-3 text-xs font-bold text-gray-600 whitespace-nowrap">{h}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {guruData.map((g, i) => (
+                        <tr key={g.id} className="border-b border-gray-50 hover:bg-gray-50 transition-colors">
+                          <td className="px-4 py-3 text-xs text-gray-500">{i + 1}</td>
+                          <td className="px-4 py-3">
+                            <div className="flex items-center gap-2">
+                              <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                <span className="text-blue-700 text-xs font-bold">{g.nama[0]}</span>
+                              </div>
+                              <span className="font-semibold text-gray-800 text-xs">{g.nama}</span>
+                            </div>
+                          </td>
+                          <td className="px-4 py-3 text-xs text-gray-600">{g.mapel}</td>
+                          <td className="px-4 py-3">
+                            <span className={`text-xs px-2 py-0.5 rounded-full font-semibold ${g.status === 'Hadir' ? 'bg-green-100 text-green-700' : g.status === 'Izin' ? 'bg-yellow-100 text-yellow-700' : 'bg-red-100 text-red-700'}`}>
+                              {g.status}
+                            </span>
+                          </td>
+                          <td className="px-4 py-3 text-xs text-gray-500">-</td>
+                          <td className="px-4 py-3 text-xs text-gray-500">11 Maret 2026</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* KEHADIRAN SISWA */}
+          {activeTab === "kehadiran_siswa" && (
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h2 className="text-xl font-bold text-gray-800">Kehadiran Siswa</h2>
+                  <p className="text-gray-500 text-sm">Data kehadiran siswa harian</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead className="bg-gray-50 border-b border-gray-200">
+                      <tr>
+                        {["No", "Nama Siswa", "NIS", "Kelas", "Status", "Keterangan", "Tanggal"].map(h => (
+                          <th key={h} className="text-left px-4 py-3 text-xs font-bold text-gray-600 whitespace-nowrap">{h}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {mockAbsensi.map((a, i) => (
+                        <tr key={a.id} className="border-b border-gray-50 hover:bg-gray-50 transition-colors">
+                          <td className="px-4 py-3 text-xs text-gray-500">{i + 1}</td>
+                          <td className="px-4 py-3">
+                            <div className="flex items-center gap-2">
+                              <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                <span className="text-green-700 text-xs font-bold">{a.nama[0]}</span>
+                              </div>
+                              <span className="font-semibold text-gray-800 text-xs">{a.nama}</span>
+                            </div>
+                          </td>
+                          <td className="px-4 py-3 text-xs font-mono text-gray-600">{a.nis}</td>
+                          <td className="px-4 py-3 text-xs"><span className="bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full">{a.kelas}</span></td>
+                          <td className="px-4 py-3">
+                            <span className={`text-xs px-2 py-0.5 rounded-full font-semibold ${a.status === 'Hadir' ? 'bg-green-100 text-green-700' : a.status === 'Izin' ? 'bg-yellow-100 text-yellow-700' : 'bg-red-100 text-red-700'}`}>
+                              {a.status}
+                            </span>
+                          </td>
+                          <td className="px-4 py-3 text-xs text-gray-500">{a.keterangan}</td>
+                          <td className="px-4 py-3 text-xs text-gray-500">11 Maret 2026</td>
                         </tr>
                       ))}
                     </tbody>

@@ -84,9 +84,11 @@ export default function GuruDashboard() {
       {/* Sidebar */}
       <aside className={`fixed inset-y-0 left-0 z-50 w-64 bg-[#0d3b7d] text-white transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:relative md:translate-x-0 flex flex-col`}>
         <div className="p-4 border-b border-white/10 flex items-center gap-3">
-          <div className="w-9 h-9 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="text-[#0d3b7d] font-black text-xs">SMP1</span>
-          </div>
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.gRycrEfwP4aElgAb_9LTCwHaHa?pid=Api&h=220&P=0"
+            alt="Logo SMP N 1 Pleret"
+            className="w-9 h-9 rounded-full object-cover flex-shrink-0"
+          />
           <div className="min-w-0">
             <p className="font-bold text-sm">Portal Guru</p>
             <p className="text-yellow-300 text-xs">Drs. Bambang Suryadi</p>
